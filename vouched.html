@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+html {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+Helvetica, Arial, sans-serif;
+}
+html,
+body {
+margin: 0;
+padding: 0;
+}
+</style>
+<script src="https://static.vouched.id/widget/vouched.js"></script>
+<script>
+(function() {
+console.log(` -- starting`);
+var vouched = Vouched({
+appId: "1IjVhsmCi!voo0!jmIYpPg8h*xC.a~",
+types: ["id-verification"],
+callbackURL: "https://en9dvvp9fnbvk.x.pipedream.net",
+liveness: "straight",
+onInit: () => {
+console.log("Scanning started");
+},
+onDone: (results, jobId) => {
+console.log("Scanning complete", { results, jobId });
+}
+});
+console.log(` -- mounting`);
+vouched.mount("#vouched-element");
+console.log(` -- done`);
+})();
+</script>
+</head>
+<body>
+<div id="vouched-element" style="height: 100%"></div>
+</body>
+</html>
