@@ -2,9 +2,19 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<script src="​https://verify.socure.com/websdk/bundle.js"​></script>
+<link rel="stylesheet" href="https://verify.socure.com/websdk/bundle.css"/>
 </head>
 <body>
-<div id="vouched-element" style="height: 100%"></div>
+<div id="embedDiv" style="height: 100%"></div>
 </body>
+<script src="https://verify.socure.com/websdk/bundle.js"​></script>
+<script>
+var config = {
+       onProgress: onProgress, //callback method for reading the progress status
+       onSuccess: onSuccess, //callback method to read the success response
+       onError: onError, //callback method to read the error response
+       qrCodeNeeded: true //toggle the QR code display
+};
+Socure.init("49b2a770-0540-400b-a7a7-4da404445270",’#embedDiv’, config)
+</script>
 </html>
