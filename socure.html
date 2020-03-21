@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <meta charset="utf-8" />
@@ -9,6 +10,19 @@
 </body>
 <script src="https://verify.socure.com/websdk/bundle.js"​></script>
 <script>
+
+function onProgress(e) {
+  console.log(e);
+}
+
+function onSuccess(e) {
+  console.log(e);
+}
+
+function onError(e) {
+  console.log(e);
+}
+
 var config = {
        onProgress: onProgress, //callback method for reading the progress status
        onSuccess: onSuccess, //callback method to read the success response
