@@ -28,7 +28,11 @@ var config = {
        onError: onError, //callback method to read the error response
        qrCodeNeeded: true //toggle the QR code display
 };
-Socure.init("49b2a770-0540-400b-a7a7-4da404445270","#embedDiv", config);
-Socure.start(2);
+
+function startSocure() {
+  Socure.init("05cad6f7-1b32-4169-b652-f4cec15cb148", "#embed", config);
+  Socure.start(2);
+}
+window.addEventListener("load", () => startSocure());
 </script>
 </html>
