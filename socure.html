@@ -29,10 +29,7 @@ var config = {
        qrCodeNeeded: true //toggle the QR code display
 };
 
-function startSocure() {
-  Socure.init("05cad6f7-1b32-4169-b652-f4cec15cb148", "#embed", config);
-  Socure.start(2);
-}
-window.addEventListener("load", () => startSocure());
+window.addEventListener("load", () => Socure.init("05cad6f7-1b32-4169-b652-f4cec15cb148", "#embed", config));
+Socure.start(2);
 </script>
 </html>
