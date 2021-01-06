@@ -1,4 +1,4 @@
-import alloy from 'alloy-identity-system';
+import alloy from '@alloyidentity/web-sdk';
 
 const alloyInitParams = {
     key: '03d980-bv24-4ca1-99f2-90e3ee3f4e6b', // Client specific key
