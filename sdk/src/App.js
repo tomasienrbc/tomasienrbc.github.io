@@ -59,7 +59,7 @@ function App() {
           <br />
           <br />
           <h1>Submit An Identity Document to Complete Your Application</h1>
-          <button onClick={onOpen}>PLEASE SUBMIT DOCS</button>
+          <button onClick={onOpen}>SUBMIT DOCS</button>
         </div>
       </div>
     </>
